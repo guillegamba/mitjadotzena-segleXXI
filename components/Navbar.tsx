@@ -23,7 +23,7 @@ export const Navbar: React.FC = () => {
         {/* Logo */}
         <a href="#top" className="flex items-center gap-3 z-50">
           <img
-            src="/logo_black.png"
+            src="logo_black.png"
             alt="Mitjadotzena Studio"
             className="h-8 w-auto"
           />
