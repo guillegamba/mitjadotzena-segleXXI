@@ -69,13 +69,13 @@ export const Hero: React.FC = () => {
         <div className="flex flex-col items-center justify-center relative z-20">
           <div className="opacity-0 animate-fade-up inline-flex items-center gap-2 mb-6">
              <Sparkles size={16} className="text-[#F4C5B6]" />
-             <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#E5D5CF]">The Merch Design Studio</span>
+             <span className="text-xs font-bold uppercase tracking-[0.2em] text-brand-orange">The Merch Design Studio</span>
           </div>
 
           <h1 className="opacity-0 animate-fade-up-delay-1 font-display font-bold text-6xl md:text-8xl lg:text-9xl leading-[0.9] md:leading-[0.85] tracking-tighter mb-8 text-brand-black">
             Merch that <br/>
             <span className="relative inline-block mt-2">
-              <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-brand-orange via-red-500 to-brand-purple">people keep.</span>
+              <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-brand-purple">people keep.</span>
             </span>
           </h1>
 
