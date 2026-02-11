@@ -1,11 +1,10 @@
-import Image from 'next/image';
+import React from 'react';
+import logoBlack from '../logo_black.png';
 
-const Navbar = () => {
-    return (
-        <nav>
-            <Image src={'/logo_black.png'} alt='Logo' />
-        </nav>
-    );
+export const Navbar: React.FC = () => {
+  return (
+    <nav className="w-full px-6 py-6">
+      <img src={logoBlack} alt="Mitjadotzena logo" className="h-8 w-auto" />
+    </nav>
+  );
 };
-
-export default Navbar;
