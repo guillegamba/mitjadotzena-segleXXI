@@ -21,12 +21,13 @@ export const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-2 z-50">
-          <div className="w-8 h-8 bg-brand-black rounded-full flex items-center justify-center text-white font-bold font-display text-xl">
-            M
-          </div>
-          <span className="font-display font-bold text-xl tracking-tight">Mitjadotzena</span>
-        </div>
+        <a href="#top" className="flex items-center gap-3 z-50">
+          <img
+            src="/logo-mitjadotzena.svg"
+            alt="Mitjadotzena Studio"
+            className="h-8 w-auto"
+          />
+        </a>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
