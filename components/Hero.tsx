@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
            <div className="absolute top-[10%] left-[2%] xl:left-[5%] w-72 animate-float pointer-events-auto cursor-pointer group hover:z-50">
              <div className="relative bg-white p-4 shadow-2xl rounded-2xl transition-transform duration-500 hover:scale-105">
                 <div className="overflow-hidden rounded-xl bg-gray-50 aspect-square">
-                  <img src="https://images.unsplash.com/photo-1678922098020-95700a892472?auto=format&fit=crop&q=80&w=400?auto=format&fit=crop&q=80&w=600" alt="Organic Cotton" className="w-full h-full object-cover mix-blend-multiply opacity-90 hover:opacity-100 transition-opacity"/>
+                  <img src="https://images.unsplash.com/photo-1597484662317-9bd7bdda2907?auto=format&fit=crop&q=80&w=600" alt="Organic Cotton" className="w-full h-full object-cover mix-blend-multiply opacity-90 hover:opacity-100 transition-opacity"/>
                 </div>
                 {/* Tag: Black, Bottom Right */}
                 <div className="absolute -bottom-4 -right-4 bg-black text-white text-sm font-bold px-5 py-2 rounded-full shadow-lg border border-white/20">
@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
            <div className="absolute top-[12%] right-[2%] xl:right-[5%] w-64 animate-float-delayed pointer-events-auto cursor-pointer group hover:z-50">
              <div className="relative bg-white p-3 shadow-xl rounded-xl transition-transform duration-500 hover:scale-105">
                 <div className="overflow-hidden rounded-lg aspect-[4/5]">
-                  <img src="https://images.unsplash.com/photo-1644946882015-cbc3c92d0526?auto=format&fit=crop&q=80&w=400" alt="Notebook" className="w-full h-full object-cover"/>
+                  <img src="https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&q=80&w=400" alt="Notebook" className="w-full h-full object-cover"/>
                 </div>
                 {/* Tag: Purple, Top Left */}
                 <div className="absolute -top-3 -left-4 bg-[#9D4EDD] text-white text-xs font-bold px-4 py-2 rounded-full shadow-md">
@@ -40,7 +40,7 @@ export const Hero: React.FC = () => {
            <div className="absolute bottom-[5%] left-[5%] xl:left-[8%] w-60 animate-float-slow pointer-events-auto cursor-pointer group hover:z-50">
              <div className="relative bg-white p-3 shadow-xl rounded-xl transition-transform duration-500 hover:scale-105">
                 <div className="overflow-hidden rounded-lg aspect-[4/3]">
-                   <img src="https://images.unsplash.com/photo-1625708458528-802ec79b1ed8?auto=format&fit=crop&q=80&w=500" alt="Cap" className="w-full h-full object-cover"/>
+                   <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&q=80&w=500" alt="Cap" className="w-full h-full object-cover"/>
                 </div>
                 {/* Tag: Orange, Top Right */}
                 <div className="absolute -top-3 -right-3 bg-brand-orange text-brand-black text-xs font-bold px-4 py-2 rounded-full shadow-md">
@@ -99,7 +99,7 @@ export const Hero: React.FC = () => {
              {/* Mobile Item 1: Organic Cotton */}
              <div className="bg-white p-3 shadow-lg rounded-xl">
                 <div className="overflow-hidden rounded-lg bg-gray-50 aspect-square mb-2">
-                  <img src="https://images.unsplash.com/photo-1678922098020-95700a892472?auto=format&fit=crop&q=80&w=400" alt="Organic Cotton" className="w-full h-full object-cover mix-blend-multiply opacity-90"/>
+                  <img src="https://images.unsplash.com/photo-1597484662317-9bd7bdda2907?auto=format&fit=crop&q=80&w=400" alt="Organic Cotton" className="w-full h-full object-cover mix-blend-multiply opacity-90"/>
                 </div>
                 <div className="text-center">
                    <span className="text-[10px] font-bold bg-black text-white px-2 py-1 rounded-full inline-block">Organic Cotton</span>
@@ -109,7 +109,7 @@ export const Hero: React.FC = () => {
              {/* Mobile Item 2: Recycled Paper */}
              <div className="bg-white p-3 shadow-lg rounded-xl">
                 <div className="overflow-hidden rounded-lg aspect-square mb-2">
-                  <img src="https://images.unsplash.com/photo-1644946882015-cbc3c92d0526?auto=format&fit=crop&q=80&w=400" alt="Notebook" className="w-full h-full object-cover"/>
+                  <img src="https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&q=80&w=400" alt="Notebook" className="w-full h-full object-cover"/>
                 </div>
                 <div className="text-center">
                    <span className="text-[10px] font-bold bg-[#9D4EDD] text-white px-2 py-1 rounded-full inline-block">Recycled Paper</span>
