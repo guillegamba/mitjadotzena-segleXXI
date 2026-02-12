@@ -133,7 +133,7 @@ export const CTASection: React.FC = () => {
                         >
                            <option>Onboarding Packs</option>
                            <option>Event Merchandise</option>
-                           <option>Employee Gifts</option>
+                           <option>Gifts & Supplies</option>
                            <option>General Inquiry</option>
                         </select>
                      </div>
@@ -160,7 +160,7 @@ export const CTASection: React.FC = () => {
                           </>
                         ) : (
                           <>
-                            Get in Touch <Send size={18} />
+                            Send <Send size={18} />
                           </>
                         )}
                      </button>
