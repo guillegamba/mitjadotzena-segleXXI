@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
           {/* Brand */}
           <div className="md:w-1/2">
             <img 
-              src="https://github.com/guillegamba/mitjadotzena-segleXXI/blob/main/logo_black.png?raw=true" 
+              src="https://raw.githubusercontent.com/guillegamba/mitjadotzena-segleXXI/main/logo_black.png" 
               alt="Mitjadotzena" 
               className="h-10 w-auto mb-6 brightness-0 invert" 
             />

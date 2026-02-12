@@ -20,24 +20,20 @@ export const CTASection: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // ----------------------------------------------------------------------
-    // NOTE: To actually send emails, you need a backend or a service like Formspree.
-    // Example implementation with Formspree:
-    //
-    // const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json" },
-    //   body: JSON.stringify(formData)
-    // });
-    //
-    // For now, we simulate a successful submission.
-    // ----------------------------------------------------------------------
-
     try {
-      // Simulate network delay
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      setIsSuccess(true);
-      setFormData({ name: '', email: '', interest: 'Onboarding Packs', message: '' });
+      const response = await fetch("https://formspree.io/f/xlgwjnnq", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        setIsSuccess(true);
+        setFormData({ name: '', email: '', interest: 'Onboarding Packs', message: '' });
+      } else {
+        console.error("Form submission failed");
+        // Optional: Handle error state here if needed
+      }
     } catch (error) {
       console.error("Error submitting form", error);
     } finally {

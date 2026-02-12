@@ -23,7 +23,7 @@ export const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a href="#top" className="flex items-center z-50 group">
           <img 
-            src="https://github.com/guillegamba/mitjadotzena-segleXXI/blob/main/logo_black.png?raw=true" 
+            src="https://raw.githubusercontent.com/guillegamba/mitjadotzena-segleXXI/main/logo_black.png" 
             alt="Mitjadotzena" 
             className="h-12 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
           />
