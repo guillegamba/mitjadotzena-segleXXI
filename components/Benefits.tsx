@@ -1,25 +1,30 @@
 import React from 'react';
-import { Leaf, Zap, Sparkles } from 'lucide-react';
-import { FeatureProps } from '../types';
 
-const features: FeatureProps[] = [
+interface FeatureWithImage {
+  title: string;
+  description: string;
+  imageUrl: string;
+  colorClass: string;
+}
+
+const features: FeatureWithImage[] = [
   {
     title: "Not Landfill Fodder",
     description: "We only source high-quality, sustainable materials. No cheap plastics. No 'wear once' t-shirts. Products your team will actually fight over.",
-    icon: Leaf,
-    colorClass: "bg-red-100 text-red-600"
+    imageUrl: "https://www.thiings.co/_next/image?url=https%3A%2F%2Flftz25oez4aqbxpq.public.blob.vercel-storage.com%2Fimage-3oO1FdYezMT0TBNCoEM47udBNFPzer.png",
+    colorClass: "bg-red-100"
   },
   {
     title: "Design is in our DNA",
     description: "We are a creative studio first. We ensure your brand guidelines are respected and elevated. Every item feels like a retail product.",
-    icon: Sparkles,
-    colorClass: "bg-purple-100 text-purple-600"
+    imageUrl: "https://www.thiings.co/_next/image?url=https%3A%2F%2Flftz25oez4aqbxpq.public.blob.vercel-storage.com%2Fimage-NFIVdjt7PnLaJyAkPSoJ243hDSfxn0.png",
+    colorClass: "bg-purple-100"
   },
   {
     title: "Stress-Free Execution",
     description: "From concept to doorstep. We handle sourcing, production, quality control, and logistics. You approve designs, we do the rest.",
-    icon: Zap,
-    colorClass: "bg-amber-100 text-amber-600"
+    imageUrl: "https://www.thiings.co/_next/image?url=https%3A%2F%2Flftz25oez4aqbxpq.public.blob.vercel-storage.com%2Fimage-VgWX4UmDW5pY171o65GSc2VFAIfUMl.png",
+    colorClass: "bg-amber-100"
   }
 ];
 
@@ -40,8 +45,8 @@ export const Benefits: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow group">
-              <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 ${feature.colorClass} group-hover:scale-110 transition-transform duration-300`}>
-                <feature.icon size={24} />
+              <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 ${feature.colorClass} group-hover:scale-110 transition-transform duration-300 overflow-hidden`}>
+                <img src={feature.imageUrl} alt={feature.title} className="w-full h-full object-contain p-2" />
               </div>
               <h3 className="font-display font-bold text-xl mb-3">{feature.title}</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
