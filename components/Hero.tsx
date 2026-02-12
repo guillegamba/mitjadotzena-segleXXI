@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
            <div className="absolute top-[10%] left-[2%] xl:left-[5%] w-72 animate-float pointer-events-auto cursor-pointer group hover:z-50">
              <div className="relative bg-white p-4 shadow-2xl rounded-2xl transition-transform duration-500 hover:scale-105">
                 <div className="overflow-hidden rounded-xl bg-gray-50 aspect-square">
-                  <img src="https://images.unsplash.com/photo-1597484662317-9bd7bdda2907?auto=format&fit=crop&q=80&w=600" alt="Organic Cotton" className="w-full h-full object-cover mix-blend-multiply opacity-90 hover:opacity-100 transition-opacity"/>
+                  <img src="https://images.unsplash.com/photo-1678922098020-95700a892472?auto=format&fit=crop&q=80&w=600" alt="Organic Cotton" className="w-full h-full object-cover mix-blend-multiply opacity-90 hover:opacity-100 transition-opacity"/>
                 </div>
                 {/* Tag: Black, Bottom Right */}
                 <div className="absolute -bottom-4 -right-4 bg-black text-white text-sm font-bold px-5 py-2 rounded-full shadow-lg border border-white/20">
@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
            <div className="absolute top-[12%] right-[2%] xl:right-[5%] w-64 animate-float-delayed pointer-events-auto cursor-pointer group hover:z-50">
              <div className="relative bg-white p-3 shadow-xl rounded-xl transition-transform duration-500 hover:scale-105">
                 <div className="overflow-hidden rounded-lg aspect-[4/5]">
-                  <img src="https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&q=80&w=400" alt="Notebook" className="w-full h-full object-cover"/>
+                  <img src="https://images.unsplash.com/photo-1677064061401-f77f966ff8a1?auto=format&fit=crop&q=80&w=400" alt="Notebook" className="w-full h-full object-cover"/>
                 </div>
                 {/* Tag: Purple, Top Left */}
                 <div className="absolute -top-3 -left-4 bg-[#9D4EDD] text-white text-xs font-bold px-4 py-2 rounded-full shadow-md">
@@ -40,7 +40,7 @@ export const Hero: React.FC = () => {
            <div className="absolute bottom-[5%] left-[5%] xl:left-[8%] w-60 animate-float-slow pointer-events-auto cursor-pointer group hover:z-50">
              <div className="relative bg-white p-3 shadow-xl rounded-xl transition-transform duration-500 hover:scale-105">
                 <div className="overflow-hidden rounded-lg aspect-[4/3]">
-                   <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&q=80&w=500" alt="Cap" className="w-full h-full object-cover"/>
+                   <img src="https://images.unsplash.com/photo-1625708458528-802ec79b1ed8?auto=format&fit=crop&q=80&w=500" alt="Cap" className="w-full h-full object-cover"/>
                 </div>
                 {/* Tag: Orange, Top Right */}
                 <div className="absolute -top-3 -right-3 bg-brand-orange text-brand-black text-xs font-bold px-4 py-2 rounded-full shadow-md">
@@ -50,10 +50,10 @@ export const Hero: React.FC = () => {
            </div>
 
             {/* Item 4: Bottom Right - Lifetime Use */}
-           <div className="absolute bottom-[8%] right-[5%] xl:right-[8%] w-56 animate-float pointer-events-auto cursor-pointer group hover:z-50">
+           <div className="absolute bottom-[8%] right-[5%] xl:right-[8%] w-65 animate-float pointer-events-auto cursor-pointer group hover:z-50">
              <div className="relative bg-white p-4 shadow-xl rounded-xl transition-transform duration-500 hover:scale-105">
-                <div className="overflow-hidden rounded-lg bg-gray-50 aspect-square flex items-center justify-center">
-                  <div className="w-full h-full bg-gradient-to-br from-gray-50 to-gray-100 opacity-50"></div>
+                <div className="overflow-hidden rounded-lg aspect-[4/3]">
+                   <img src="https://images.unsplash.com/photo-1621609764049-5ee1db3d7c35?auto=format&fit=crop&q=80&w=500" alt="Cap" className="w-full h-full object-cover"/>
                 </div>
                 {/* Tag: Grey, Bottom Center inside */}
                 <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-[#E5E7EB] text-brand-black text-xs font-bold px-4 py-1.5 rounded-full shadow-sm w-max">
@@ -99,7 +99,7 @@ export const Hero: React.FC = () => {
              {/* Mobile Item 1: Organic Cotton */}
              <div className="bg-white p-3 shadow-lg rounded-xl">
                 <div className="overflow-hidden rounded-lg bg-gray-50 aspect-square mb-2">
-                  <img src="https://images.unsplash.com/photo-1597484662317-9bd7bdda2907?auto=format&fit=crop&q=80&w=400" alt="Organic Cotton" className="w-full h-full object-cover mix-blend-multiply opacity-90"/>
+                  <img src="https://images.unsplash.com/photo-1678922098020-95700a892472?auto=format&fit=crop&q=80&w=600" alt="Organic Cotton" className="w-full h-full object-cover mix-blend-multiply opacity-90"/>
                 </div>
                 <div className="text-center">
                    <span className="text-[10px] font-bold bg-black text-white px-2 py-1 rounded-full inline-block">Organic Cotton</span>
@@ -109,7 +109,7 @@ export const Hero: React.FC = () => {
              {/* Mobile Item 2: Recycled Paper */}
              <div className="bg-white p-3 shadow-lg rounded-xl">
                 <div className="overflow-hidden rounded-lg aspect-square mb-2">
-                  <img src="https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&q=80&w=400" alt="Notebook" className="w-full h-full object-cover"/>
+                  <img src="https://images.unsplash.com/photo-1677064061401-f77f966ff8a1?auto=format&fit=crop&q=80&w=400" alt="Notebook" className="w-full h-full object-cover"/>
                 </div>
                 <div className="text-center">
                    <span className="text-[10px] font-bold bg-[#9D4EDD] text-white px-2 py-1 rounded-full inline-block">Recycled Paper</span>
@@ -119,7 +119,7 @@ export const Hero: React.FC = () => {
              {/* Mobile Item 3: No Plastic */}
              <div className="bg-white p-3 shadow-lg rounded-xl">
                 <div className="overflow-hidden rounded-lg aspect-square mb-2">
-                   <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&q=80&w=400" alt="Cap" className="w-full h-full object-cover"/>
+                   <img src="https://images.unsplash.com/photo-1625708458528-802ec79b1ed8?auto=format&fit=crop&q=80&w=400" alt="Cap" className="w-full h-full object-cover"/>
                 </div>
                 <div className="text-center">
                    <span className="text-[10px] font-bold bg-brand-orange text-brand-black px-2 py-1 rounded-full inline-block">No Plastic</span>
@@ -128,8 +128,8 @@ export const Hero: React.FC = () => {
 
              {/* Mobile Item 4: Lifetime Use */}
              <div className="bg-white p-3 shadow-lg rounded-xl">
-                <div className="overflow-hidden rounded-lg bg-gray-50 aspect-square flex items-center justify-center mb-2">
-                  <div className="w-full h-full bg-gradient-to-br from-gray-50 to-gray-100 opacity-50"></div>
+                <div className="overflow-hidden rounded-lg aspect-square mb-2">
+                   <img src="https://images.unsplash.com/photo-1621609764049-5ee1db3d7c35?auto=format&fit=crop&q=80&w=400" alt="Cap" className="w-full h-full object-cover"/>
                 </div>
                 <div className="text-center">
                    <span className="text-[10px] font-bold bg-[#E5E7EB] text-brand-black px-2 py-1 rounded-full inline-block">Lifetime Use</span>
