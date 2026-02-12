@@ -2,6 +2,7 @@ export interface FeatureProps {
   title: string;
   description: string;
   imageUrl: string;
+  gradientClass?: string;
 }
 
 export interface UseCaseProps {
