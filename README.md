@@ -18,3 +18,16 @@ View your app in AI Studio: https://ai.studio/apps/drive/1CypKJ0vkvtBKwEc4FBOZTx
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Manage images directly in GitHub
+
+This repo is prepared to host image assets locally under `public/images/`.
+
+- Folder guide: `public/images/README.md`
+- Migration checklist: `public/images/migration-map.md`
+
+When you add images there, reference them in components with root-relative URLs, for example:
+
+```tsx
+<img src="/images/hero/organic-cotton.jpg" alt="Organic cotton" />
+```
