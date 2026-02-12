@@ -9,12 +9,11 @@ export const Footer: React.FC = () => {
           
           {/* Brand */}
           <div className="md:w-1/2">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 bg-brand-cream rounded-full flex items-center justify-center text-brand-black font-bold font-display text-xl">
-                M
-              </div>
-              <span className="font-display font-bold text-2xl tracking-tight">Mitjadotzena</span>
-            </div>
+            <img 
+              src="/logo_black.png" 
+              alt="Mitjadotzena" 
+              className="h-10 w-auto mb-6 brightness-0 invert" 
+            />
             <p className="text-gray-400 max-w-sm text-lg">
               The creative studio for conscious merchandise. <br/>
               Designed in Barcelona, made responsibly for the world.

@@ -1,10 +1,7 @@
-import { LucideIcon } from 'lucide-react';
-
 export interface FeatureProps {
   title: string;
   description: string;
-  icon: LucideIcon;
-  colorClass: string;
+  imageUrl: string;
 }
 
 export interface UseCaseProps {

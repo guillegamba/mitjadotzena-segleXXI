@@ -1,30 +1,21 @@
 import React from 'react';
+import { FeatureProps } from '../types';
 
-interface FeatureWithImage {
-  title: string;
-  description: string;
-  imageUrl: string;
-  colorClass: string;
-}
-
-const features: FeatureWithImage[] = [
+const features: FeatureProps[] = [
   {
     title: "Not Landfill Fodder",
     description: "We only source high-quality, sustainable materials. No cheap plastics. No 'wear once' t-shirts. Products your team will actually fight over.",
-    imageUrl: "https://www.thiings.co/_next/image?url=https%3A%2F%2Flftz25oez4aqbxpq.public.blob.vercel-storage.com%2Fimage-3oO1FdYezMT0TBNCoEM47udBNFPzer.png",
-    colorClass: "bg-red-100"
+    imageUrl: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-3oO1FdYezMT0TBNCoEM47udBNFPzer.png"
   },
   {
     title: "Design is in our DNA",
     description: "We are a creative studio first. We ensure your brand guidelines are respected and elevated. Every item feels like a retail product.",
-    imageUrl: "https://www.thiings.co/_next/image?url=https%3A%2F%2Flftz25oez4aqbxpq.public.blob.vercel-storage.com%2Fimage-NFIVdjt7PnLaJyAkPSoJ243hDSfxn0.png",
-    colorClass: "bg-purple-100"
+    imageUrl: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-NFIVdjt7PnLaJyAkPSoJ243hDSfxn0.png"
   },
   {
     title: "Stress-Free Execution",
     description: "From concept to doorstep. We handle sourcing, production, quality control, and logistics. You approve designs, we do the rest.",
-    imageUrl: "https://www.thiings.co/_next/image?url=https%3A%2F%2Flftz25oez4aqbxpq.public.blob.vercel-storage.com%2Fimage-VgWX4UmDW5pY171o65GSc2VFAIfUMl.png",
-    colorClass: "bg-amber-100"
+    imageUrl: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-VgWX4UmDW5pY171o65GSc2VFAIfUMl.png"
   }
 ];
 
@@ -45,8 +36,12 @@ export const Benefits: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow group">
-              <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 ${feature.colorClass} group-hover:scale-110 transition-transform duration-300 overflow-hidden`}>
-                <img src={feature.imageUrl} alt={feature.title} className="w-full h-full object-contain p-2" />
+              <div className="w-16 h-16 mb-6 group-hover:scale-110 transition-transform duration-300">
+                <img 
+                  src={feature.imageUrl} 
+                  alt={feature.title} 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <h3 className="font-display font-bold text-xl mb-3">{feature.title}</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
