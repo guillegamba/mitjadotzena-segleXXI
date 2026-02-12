@@ -1,5 +1,6 @@
 import React from 'react';
 import { Instagram, Linkedin, Twitter } from 'lucide-react';
+import logoBlack from '../logo_black.png';
 
 export const Footer: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ export const Footer: React.FC = () => {
           {/* Brand */}
           <div className="md:w-1/2">
             <img 
-              src="https://raw.githubusercontent.com/guillegamba/mitjadotzena-segleXXI/main/logo_black.png" 
+              src={logoBlack}
               alt="Mitjadotzena" 
               className="h-10 w-auto mb-6 brightness-0 invert" 
             />
