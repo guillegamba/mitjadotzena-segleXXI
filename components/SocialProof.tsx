@@ -2,7 +2,7 @@ import React from 'react';
 
 export const SocialProof: React.FC = () => {
   // Using text placeholders for logos for simplicity, styled to look like logos
-  const brands = ["Spotify", "Typeform", "TravelPerk", "Glovo", "Heura", "Factorial"];
+  const brands = ["Scopely", "Typeform", "TravelPerk", "Glovo", "Ona", "Go Vocal"];
 
   return (
     <section className="py-12 border-y border-gray-200 bg-white/50">

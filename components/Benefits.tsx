@@ -1,12 +1,12 @@
 import React from 'react';
-import { Trash2, Zap, Sparkles } from 'lucide-react';
+import { Leaf, Zap, Sparkles } from 'lucide-react';
 import { FeatureProps } from '../types';
 
 const features: FeatureProps[] = [
   {
     title: "Not Landfill Fodder",
     description: "We only source high-quality, sustainable materials. No cheap plastics. No 'wear once' t-shirts. Products your team will actually fight over.",
-    icon: Trash2,
+    icon: Leaf,
     colorClass: "bg-red-100 text-red-600"
   },
   {
