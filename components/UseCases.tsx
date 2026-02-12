@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Briefcase, Users, Star, UserPlus } from 'lucide-react';
+import { SmilePlus, Gem, PartyPopper } from 'lucide-react';
 import { UseCaseProps } from '../types';
 
 const cases: UseCaseProps[] = [
@@ -28,6 +28,12 @@ const cases: UseCaseProps[] = [
 
 export const UseCases: React.FC = () => {
   const [activeTab, setActiveTab] = useState(0);
+  
+  // Mapping icons to cases by index: 
+  // 0: SmilePlus (Smile with a plus)
+  // 1: Gem (Ring/Jewelry for Anniversaries/Experience)
+  // 2: PartyPopper (Balloon/Celebration for Events)
+  const icons = [SmilePlus, Gem, PartyPopper];
 
   return (
     <section id="use-cases" className="py-24 bg-brand-black text-brand-cream">
@@ -40,20 +46,23 @@ export const UseCases: React.FC = () => {
               Who is this for?
             </h2>
             <div className="space-y-4">
-              {cases.map((c, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => setActiveTab(idx)}
-                  className={`w-full text-left p-6 rounded-xl transition-all duration-300 flex items-center justify-between group ${
-                    activeTab === idx 
-                      ? 'bg-brand-orange text-brand-black shadow-lg scale-105' 
-                      : 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white'
-                  }`}
-                >
-                  <span className="font-display font-bold text-lg">{c.title}</span>
-                  {activeTab === idx && <Star size={18} className="fill-current" />}
-                </button>
-              ))}
+              {cases.map((c, idx) => {
+                const Icon = icons[idx];
+                return (
+                  <button
+                    key={idx}
+                    onClick={() => setActiveTab(idx)}
+                    className={`w-full text-left p-6 rounded-xl transition-all duration-300 flex items-center justify-between group ${
+                      activeTab === idx 
+                        ? 'bg-brand-orange text-brand-black shadow-lg scale-105' 
+                        : 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white'
+                    }`}
+                  >
+                    <span className="font-display font-bold text-lg">{c.title}</span>
+                    {activeTab === idx && <Icon size={20} strokeWidth={2.5} />}
+                  </button>
+                );
+              })}
             </div>
           </div>
 
