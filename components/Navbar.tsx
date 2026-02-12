@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import logoBlack from '../logo_black.png';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,7 +24,7 @@ export const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a href="#top" className="flex items-center z-50 group">
           <img 
-            src="https://raw.githubusercontent.com/guillegamba/mitjadotzena-segleXXI/main/logo_black.png" 
+            src={logoBlack}
             alt="Mitjadotzena" 
             className="h-12 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
           />
