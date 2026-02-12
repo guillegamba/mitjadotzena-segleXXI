@@ -24,7 +24,7 @@ export const Hero: React.FC = () => {
            </div>
 
            {/* Item 2: Top Right - Notebook */}
-           <div className="absolute top-[12%] right-[2%] xl:right-[5%] w-64 animate-float-delayed pointer-events-auto cursor-pointer group hover:z-50">
+           <div className="absolute top-[8%] right-[5%] xl:right-[8%] w-56 animate-float pointer-events-auto cursor-pointer group hover:z-50">
              <div className="relative bg-white p-3 shadow-xl rounded-xl transition-transform duration-500 hover:scale-105">
                 <div className="overflow-hidden rounded-lg aspect-[4/5]">
                   <img src="https://images.unsplash.com/photo-1677064061401-f77f966ff8a1?auto=format&fit=crop&q=80&w=400" alt="Notebook" className="w-full h-full object-cover"/>
@@ -49,11 +49,11 @@ export const Hero: React.FC = () => {
              </div>
            </div>
 
-            {/* Item 4: Bottom Right - Lifetime Use */}
-           <div className="absolute bottom-[8%] right-[5%] xl:right-[8%] w-65 animate-float pointer-events-auto cursor-pointer group hover:z-50">
+           {/* Item 4: Bottom Right - Lifetime Use */}
+           <div className="absolute bottom-[8%] right-[5%] xl:right-[8%] w-56 animate-float pointer-events-auto cursor-pointer group hover:z-50">
              <div className="relative bg-white p-4 shadow-xl rounded-xl transition-transform duration-500 hover:scale-105">
                 <div className="overflow-hidden rounded-lg aspect-[4/3]">
-                   <img src="https://images.unsplash.com/photo-1621609764049-5ee1db3d7c35?auto=format&fit=crop&q=80&w=500" alt="Cap" className="w-full h-full object-cover"/>
+                   <img src="https://images.unsplash.com/photo-1621609764049-5ee1db3d7c35?auto=format&fit=crop&q=80&w=400" alt="Cap" className="w-full h-full object-cover"/>
                 </div>
                 {/* Tag: Grey, Bottom Center inside */}
                 <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-[#E5E7EB] text-brand-black text-xs font-bold px-4 py-1.5 rounded-full shadow-sm w-max">
